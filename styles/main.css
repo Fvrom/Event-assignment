@@ -1,0 +1,62 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+
+  margin: 5rem 2rem 2rem 2rem;
+  grid-gap: 1rem;
+}
+h1 {
+  font-family: fira-sans, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 6rem;
+  color: white;
+  grid-column: 1/5;
+}
+
+.span {
+  font-family: fira-sans, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 6rem;
+  color: white;
+  grid-column: 4/-1;
+  grid-row: 2/2;
+}
+
+.info-text {
+  align-self: start;
+  color: white;
+  grid-column: 1/5;
+  font-size: 1.6rem;
+}
+
+.btn-sign-up {
+  font-family: fira-sans, sans-serif;
+  font-weight: 550;
+  font-style: italic;
+  font-size: 3.73rem;
+  background-color: #efc570;
+  justify-self: center;
+
+  grid-column: 2/4;
+  width: 29.8rem;
+  height: 7.06rem;
+  border-style: none;
+  border-radius: 3.4rem;
+}
+
+.btn-info {
+  font-family: fira-sans, sans-serif;
+  font-size: 1.7rem;
+  color: white;
+  background-color: #78bdc4;
+  grid-row: 4/4;
+  align-self: end;
+  width: 9.03rem;
+  height: 9.03rem;
+  border-style: none;
+  border-radius: 50%;
+}

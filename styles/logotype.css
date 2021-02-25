@@ -1,0 +1,11 @@
+header {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  margin: 0.82rem;
+}
+
+.logotype {
+  grid-column: 3/2;
+}
