@@ -63,7 +63,7 @@ h1 {
   font-family: fira-sans, sans-serif;
   font-size: 1.3rem;
   color: white;
-  background-color: #78bdc4;
+  background-color: var(--background-lightblue-color);
 
   align-self: center;
   width: 6.8rem;

@@ -3,10 +3,14 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 10px;
+  font-family: fira-sans, sans-serif;
+  --background-blue-color: #012c3d;
+  --background-lightblue-color: #78bdc4;
+  --color-font-blue: #012c3d;
 }
 
 body {
-  background: #012c3d;
+  background: var(--background-blue-color);
 
   height: 100vh;
   width: 100%;

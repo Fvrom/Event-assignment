@@ -1,0 +1,16 @@
+.accommodations-grid-container {
+  background-color: var(--background-blue-color);
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 4rem 2rem 2rem 2rem;
+  grid-gap: 1rem;
+}
+
+.accom-grid-item1 {
+  grid-row: 1;
+}
