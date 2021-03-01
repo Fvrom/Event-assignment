@@ -35,6 +35,7 @@ h1 {
   color: white;
   grid-row: 2;
   font-size: 1.6rem;
+  line-height: 1.6;
 }
 .grid-item2 {
   display: flex;

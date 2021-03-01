@@ -1,16 +1,67 @@
 .accommodations-grid-container {
   background-color: var(--background-blue-color);
-  height: 100vh;
+  min-height: 70vh;
+  width: 100%;
   display: grid;
   grid-template-columns: 1;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(6, auto);
   align-items: center;
   flex-wrap: nowrap;
   justify-content: center;
-  padding: 4rem 2rem 2rem 2rem;
-  grid-gap: 1rem;
+  /* padding: 2rem 3rem 2rem 3rem; */
+
+  /* grid-gap: 1rem; */
 }
 
 .accom-grid-item1 {
   grid-row: 1;
+  align-self: start;
+  padding-top: 1.5rem;
+  margin: 2rem;
+  margin-left: 3.7rem;
+}
+.accom-grid-item2 {
+  margin: 2rem;
+  margin-left: 3.7rem;
+}
+.accom-grid-item3 {
+  margin: 2rem;
+  margin-left: 3.7rem;
+}
+
+.acm-title {
+  color: white;
+  font-size: 4.5rem;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.accom-hotel {
+  color: white;
+  font-size: 2.6rem;
+  font-style: italic;
+  align-self: start;
+  font-weight: 500;
+}
+
+.accom-info {
+  color: white;
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.accom-city {
+  color: white;
+  font-size: 1.6rem;
+  font-style: italic;
+  font-weight: 400;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.placemarker-container {
+  display: flex;
+  margin-top: 0.5rem;
 }
