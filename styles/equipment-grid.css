@@ -18,11 +18,10 @@
   height: 100%;
   background-color: var(--background-lightblue-color);
   grid-row: 4;
+  grid-column: 1/3;
   display: flex;
   justify-content: left;
   /*  margin-left: 3.7rem; */
-
-  z-index: 2;
 }
 .equip-grid-item2 {
   width: 100%;
@@ -39,9 +38,22 @@
   font-weight: 550;
   text-align: left;
   align-self: start;
-  z-index: 2;
+
+  margin-left: 2rem;
+  margin-top: 2rem;
+  position: relative;
 }
 
 .bike-img {
-  align-self: flex-end;
+  bottom: 30rem;
+  bottom: 2.5rem;
+  position: relative;
+  width: 20.7rem;
+  z-index: 1;
+}
+
+.equip-grid-item2 {
+  grid-row: 5/-4;
+  grid-column: 2/3;
+  height: 100%;
 }

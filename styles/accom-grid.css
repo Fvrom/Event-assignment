@@ -1,9 +1,10 @@
 .accommodations-grid-container {
   background-color: var(--background-blue-color);
-  min-height: 70vh;
-  width: 100%;
+  min-height: 80vh;
+  width: 100%-2rem;
+
   display: grid;
-  grid-template-columns: 1;
+  grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(6, auto);
   align-items: center;
   flex-wrap: nowrap;
@@ -11,9 +12,11 @@
   /* padding: 2rem 3rem 2rem 3rem; */
 
   /* grid-gap: 1rem; */
+  position: relative;
 }
 
 .accom-grid-item1 {
+  grid-column: 1/3;
   grid-row: 1;
   align-self: start;
   padding-top: 1.5rem;
@@ -21,12 +24,19 @@
   margin-left: 3.7rem;
 }
 .accom-grid-item2 {
+  grid-column: 1/3;
+  grid-row: 2;
   margin: 2rem;
   margin-left: 3.7rem;
 }
 .accom-grid-item3 {
+  grid-column: 1/3;
+  grid-row: 3;
+}
+.accom-grid-item3 {
   margin: 2rem;
   margin-left: 3.7rem;
+  z-index: 1;
 }
 
 .acm-title {
