@@ -1,16 +1,16 @@
-.container {
-  height: 100vh;
+.grid-container {
+  min-height: 100vh;
   display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: repeat(4, 1fr);
+
+  grid-template-rows: repeat(5, auto);
   align-items: center;
   flex-wrap: nowrap;
   justify-content: center;
   padding: 4rem 2rem 2rem 2rem;
-  grid-gap: 1rem;
 }
 
-.flex-wrapper {
+.grid-item1 {
+  grid-row: 1;
   text-align: center;
 }
 h1 {
@@ -22,24 +22,25 @@ h1 {
   grid-row: 1;
 }
 
-.span {
-  font-family: fira-sans, sans-serif;
-  font-weight: 500;
-  font-style: italic;
-  font-size: 6rem;
-  color: white;
-}
-
-.info-text {
+.grid-container p {
   align-self: start;
   color: white;
   grid-row: 2;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 1.6;
 }
 .grid-item2 {
+  grid-row: 2;
   display: flex;
   justify-content: center;
+  margin: 0rem 2rem 1rem 2rem;
+}
+.grid-item3 {
+  grid-row: 3;
+  align-self: flex-start;
+  display: flex;
+  justify-content: center;
+  margin: 0rem 2rem 1rem 2rem;
 }
 
 .btn-sign-up {
@@ -56,9 +57,17 @@ h1 {
   align-self: center;
 }
 
-.grid-item3 {
+.grid-item4 {
   grid-row: 4;
   display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.grid-item5 {
+  grid-row: 5;
+  display: flex;
+  margin-bottom: 6rem;
 }
 .btn-info {
   font-family: fira-sans, sans-serif;
@@ -72,4 +81,6 @@ h1 {
   border-style: none;
   border-radius: 50%;
   position: fixed;
+
+  z-index: 2;
 }

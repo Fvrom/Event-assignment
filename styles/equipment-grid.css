@@ -1,33 +1,64 @@
 .equipment-grid-container {
   background-color: var(--background-lightblue-color);
-  min-height: 50vh;
+
   width: 100%;
   display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: repeat(3, 1fr);
+
+  grid-template-rows: repeat(6, auto);
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   flex-wrap: nowrap;
   justify-content: center;
 }
-
 .equip-grid-item1 {
+  background-color: var(--background-blue-color);
+  grid-row: 1;
+  grid-column: 1/3;
+  height: 2rem;
+  width: 100%;
+}
+
+.equip-grid-item2 {
   width: 100%;
   height: 100%;
-  background-color: var(--background-lightblue-color);
-  grid-row: 4;
+
+  grid-row: 2;
   grid-column: 1/3;
   display: flex;
   justify-content: left;
   /*  margin-left: 3.7rem; */
 }
-.equip-grid-item2 {
-  width: 100%;
-  height: 100%;
-  grid-row: 5;
-  background-color: var(--background-lightblue-color);
+.equip-grid-item3 {
+  grid-row: 3;
+  grid-column: 1/3;
   display: flex;
-  justify-content: right;
+  justify-content: left;
+  /*  margin-left: 3.7rem; */
+}
+.equip-grid-item4 {
+  grid-row: 3;
+  grid-column: 1/3;
+  display: flex;
+  justify-content: left;
+  z-index: 1;
+  margin-right: 3.7rem;
+  margin-left: 3.7rem;
+}
+.equip-grid-item5 {
+  grid-row: 5;
+  grid-column: 1;
+  display: flex;
+  justify-content: center;
+  /*  margin-left: 3.7rem; */
+}
+
+.equip-grid-item6 {
+  grid-row: 6;
+  grid-column: 1/3;
+  display: flex;
+  justify-content: center;
+  margin-right: 3.7rem;
+  margin-left: 3.7rem;
 }
 .equip-title {
   color: var(--color-font-blue);
@@ -44,16 +75,17 @@
 }
 
 .bike-img {
-  bottom: 2rem;
+  width: 20rem;
   position: relative;
-  width: 20.07rem;
-  float: right;
+  transform: translateX(10%);
 }
 
-.equip-grid-item2 {
-  grid-row: 5/-4;
+.equip-grid-item3 {
+  grid-row: 1/4;
   grid-column: 2/3;
   height: 100%;
+
+  overflow: hidden;
 }
 
 /* Overflow hidden 
