@@ -1,0 +1,116 @@
+.register-grid-container {
+  background-color: var(--background-blue-color);
+
+  width: 100%;
+  display: grid;
+
+  grid-template-rows: repeat(6, auto);
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.reg-grid-item1 {
+  grid-column: 1/3;
+  grid-row: 2;
+  align-self: start;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.reg-empty-grid {
+  background-color: whitesmoke;
+  grid-column: 1/3;
+  grid-row: 1;
+  height: 2rem;
+}
+
+.reg-grid-item3 {
+  grid-column: 1/3;
+  grid-row: 3;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+  margin-left: 3.7rem;
+}
+
+.reg-grid-item3 p,
+.reg-grid-item3 li {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-top: 1rem;
+  z-index: 1;
+}
+
+.reg-grid-item4 {
+  grid-column: 1/3;
+  grid-row: 4/5;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.reg-form-wrapper {
+  background-color: #f7f8f3;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border: solid 1rem #78bdc4;
+  margin: 3rem;
+}
+.reg-grid-item4 h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 2.6rem;
+  margin-top: 2rem;
+}
+
+.reg-grid-item4 form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.reg-grid-item4 label {
+  font-size: 1.6rem;
+  color: var(--background-blue-color);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.reg-grid-item4 input,
+textarea {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 4rem;
+  margin: 0rem 1rem 1rem 1rem;
+  border: none;
+  box-shadow: 0 0 6px #00000029;
+}
+
+.reg-grid-item4 textarea {
+  height: 6rem;
+}
+
+.reg-grid-item4 button {
+  height: 4rem;
+  width: 20rem;
+  align-self: center;
+  font-size: 1.7rem;
+  background-color: #efc570;
+  border: none;
+  border-radius: 2rem;
+}
+.reg-grid-item5 {
+  grid-column: 1/3;
+  grid-row: 5;
+  background-color: whitesmoke;
+  height: 5rem;
+}
