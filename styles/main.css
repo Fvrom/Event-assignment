@@ -1,11 +1,20 @@
+header {
+  background: var(--background-blue-color);
+  margin: 0;
+}
+
+header img {
+  margin-top: 4rem;
+}
 .grid-container {
   min-height: 100vh;
   display: grid;
-
+  background: var(--background-blue-color);
   grid-template-rows: repeat(5, auto);
   align-items: center;
   flex-wrap: nowrap;
   justify-content: center;
+
   padding: 4rem 2rem 2rem 2rem;
 }
 

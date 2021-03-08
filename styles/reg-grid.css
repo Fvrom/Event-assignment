@@ -2,6 +2,7 @@
   background-color: var(--background-blue-color);
 
   width: 100%;
+
   display: grid;
 
   grid-template-rows: repeat(6, auto);
@@ -136,10 +137,17 @@ textarea {
 }
 
 @media screen and (min-width: 700px) {
+  .reg-grid-item1 {
+    grid-column: 1;
+    grid-row: 3;
+    margin-top: 0rem;
+  }
   .reg-grid-item3 {
+    grid-row: 3;
     grid-column: 1;
     display: flex;
     justify-content: center;
+    align-self: center;
   }
   .reg-grid-item3 p,
   .reg-grid-item3 ul {
