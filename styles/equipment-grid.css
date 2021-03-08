@@ -15,7 +15,6 @@
   grid-row: 1;
   grid-column: 1/3;
   height: 2rem;
-  width: 100%;
 }
 
 .equip-grid-item2 {
@@ -66,6 +65,7 @@
 .equip-grid-item6 li {
   color: var(--background-blue-color);
   font-size: 1.3rem;
+  max-width: 75ch;
   font-weight: 500;
   line-height: 1.6;
   margin-top: 1rem;
@@ -101,5 +101,39 @@
   overflow: hidden;
 }
 
-/* Overflow hidden 
-Köra en translate x på container , gömmer halvan av bilden */
+@media screen and (min-width: 600px) {
+  .equip-grid-item2,
+  .equip-grid-item5,
+  .equip-grid-item6 {
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+  }
+
+  .equip-title {
+    display: flex;
+    justify-content: center;
+  }
+  .equip-grid-item6 {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .equip-grid-item3 {
+    grid-column: 2;
+    grid-row: 1/6;
+  }
+
+  .bike-img {
+    width: 36rem;
+    height: 32rem;
+
+    align-self: flex-start;
+    transform: translateX(15%);
+  }
+
+  .equip-grid-item1 {
+    height: 4rem;
+    overflow: hidden;
+  }
+}

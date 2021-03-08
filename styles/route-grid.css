@@ -53,6 +53,7 @@
   grid-row: 3;
   align-self: center;
   z-index: 1;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 3rem;
@@ -63,6 +64,7 @@
   grid-row: 4;
   align-self: center;
   z-index: 1;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   margin-top: 3rem;
@@ -77,6 +79,7 @@
   justify-content: center;
   margin-top: 3rem;
   margin-left: 3.7rem;
+  z-index: 1;
 }
 .route-grid-item5 {
   display: flex;
@@ -90,13 +93,13 @@
   color: var(--color-font-blue);
   font-size: 2.6rem;
   font-style: italic;
-  align-self: start;
 }
 
 .etapp-info {
   color: var(--color-font-blue);
   font-size: 1.3rem;
   line-height: 1.6;
+  display: flex;
 }
 
 .map-img {
@@ -105,3 +108,31 @@
   margin-top: 3rem;
   overflow: hidden;
 }
+
+@media screen and (min-width: 600px) {
+  .route-grid-item1,
+  .route-grid-item2,
+  .route-grid-item3,
+  .route-grid-item4 {
+    display: flex;
+    justify-content: center;
+  }
+  .etapp-info,
+  .etapp {
+    display: flex;
+
+    justify-content: center;
+  }
+  .map-img {
+    width: 55rem;
+  }
+
+  .img-map-icon-grid-item {
+    grid-row: 1/6;
+  }
+
+  .map-icon-img {
+    width: 35.2rem;
+    height: 32.4rem;
+  }
+} ;

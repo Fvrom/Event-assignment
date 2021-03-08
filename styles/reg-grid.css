@@ -53,7 +53,6 @@
   grid-row: 4/5;
   display: flex;
   justify-content: center;
-  flex-direction: column;
 }
 
 .reg-form-wrapper {
@@ -63,6 +62,7 @@
   flex-direction: column;
   border: solid 1rem #78bdc4;
   margin: 3rem;
+  width: 30rem;
 }
 .reg-grid-item4 h2 {
   display: flex;
@@ -113,4 +113,36 @@ textarea {
   grid-row: 5;
   background-color: whitesmoke;
   height: 5rem;
+}
+
+@media screen and (min-width: 600px) {
+  .reg-grid-item3 {
+    grid-column: 1;
+    align-self: flex-start;
+    margin-top: 5rem;
+  }
+
+  .reg-grid-item4 {
+    grid-column: 2;
+    grid-row: 3;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .reg-form-wrapper {
+    width: 40rem;
+    margin: 3rem 1rem 1rem 1rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .reg-grid-item3 {
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+  }
+  .reg-grid-item3 p,
+  .reg-grid-item3 ul {
+    align-self: center;
+  }
 }
