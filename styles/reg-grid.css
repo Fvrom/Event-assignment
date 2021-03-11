@@ -62,8 +62,8 @@
   justify-content: center;
   flex-direction: column;
   border: solid 1rem #78bdc4;
-  margin: 3rem;
-  width: 30rem;
+  margin: 3rem 1rem 3rem 1rem;
+  width: 100%;
 }
 .reg-grid-item4 h2 {
   display: flex;
@@ -103,6 +103,8 @@ textarea {
 .reg-grid-item4 button {
   height: 4rem;
   width: 20rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
   align-self: center;
   font-size: 1.7rem;
   background-color: #efc570;
@@ -129,9 +131,16 @@ textarea {
   }
 }
 
+@media screen and (max-width: 380px) {
+  .reg-grid-item1 .acm-title {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
 @media screen and (min-width: 700px) {
   .reg-form-wrapper {
-    width: 40rem;
+    width: 35rem;
     margin: 3rem 1rem 1rem 1rem;
   }
 }
@@ -152,5 +161,11 @@ textarea {
   .reg-grid-item3 p,
   .reg-grid-item3 ul {
     align-self: center;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .reg-form-wrapper {
+    width: 40rem;
   }
 }

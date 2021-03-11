@@ -31,20 +31,22 @@ h1 {
   grid-row: 1;
 }
 
-.grid-container p {
-  align-self: start;
-  color: white;
-  grid-row: 2;
-  font-size: 1.4rem;
-  max-width: 75ch;
-  line-height: 1.6;
-}
 .grid-item2 {
   grid-row: 2;
   display: flex;
   justify-content: center;
   margin: 0rem 2rem 1rem 2rem;
 }
+.grid-item2 p,
+.grid-item3 p {
+  align-self: center;
+  color: white;
+  grid-row: 2;
+  font-size: 1.4rem;
+  max-width: 75ch;
+  line-height: 1.8;
+}
+
 .grid-item3 {
   grid-row: 3;
   align-self: flex-start;

@@ -159,6 +159,15 @@
     margin-bottom: 10rem;
   }
   .bike-img {
+    width: 70.3rem;
+    height: 58.7rem;
+
+    transform: translateX(13%);
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .bike-img {
     width: 80.3rem;
     height: 68.7rem;
 
