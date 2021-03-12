@@ -142,11 +142,10 @@
   .equip-grid-item2,
   .equip-grid-item4 {
     grid-column: 1;
-    align-self: flex-start;
+
+    margin-right: 0;
   }
   .equip-title {
-    text-align: center;
-    align-self: flex-start;
     font-size: 8rem;
     margin-top: 4rem;
   }

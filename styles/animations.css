@@ -37,3 +37,48 @@
 .bt1:hover::before {
   height: 180%;
 }
+
+/* Arrow pointing down */
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.arrow.reveal {
+  opacity: 0;
+  height: 2rem;
+  width: 6rem;
+  margin-top: 5rem;
+  align-self: center;
+  bottom: 0;
+  animation: arrow 4s ease-in 2s forwards;
+}
+
+.arrow.reveal:after {
+  content: '';
+  height: 2rem;
+  width: 2rem;
+  margin: 1rem;
+  margin-bottom: 2rem;
+  position: absolute;
+  bottom: 0;
+  border: 1rem solid transparent;
+  border-left: 1rem solid white;
+  border-top: 1rem solid white;
+  transform: rotate(0.63turn);
+
+  animation: 4s ease-in;
+}
+
+@media screen and (max-width: 319px) {
+  .arrow {
+    display: none;
+  }
+  .arrow:after {
+    display: none;
+  }
+}

@@ -6,16 +6,19 @@ header {
 header img {
   margin-top: 4rem;
 }
+main {
+  width: 100%;
+}
 .grid-container {
   min-height: 100vh;
   display: grid;
   background: var(--background-blue-color);
+  grid-template-columns: 1;
   grid-template-rows: repeat(5, auto);
   align-items: center;
   flex-wrap: nowrap;
   justify-content: center;
-
-  padding: 4rem 2rem 2rem 2rem;
+  width: 100%;
 }
 
 .grid-item1 {
@@ -29,6 +32,7 @@ h1 {
   font-size: 6rem;
   color: white;
   grid-row: 1;
+  transition: 1s ease-in;
 }
 
 .grid-item2 {
@@ -45,6 +49,7 @@ h1 {
   font-size: 1.4rem;
   max-width: 75ch;
   line-height: 1.8;
+  transition: 0.5s ease-in;
 }
 
 .grid-item3 {
@@ -69,32 +74,48 @@ h1 {
   align-self: center;
   transition: 0.8s;
   overflow: hidden;
+  align-self: center;
 }
 
 .grid-item4 {
   grid-row: 4;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 6rem;
 }
 
 .grid-item5 {
-  grid-row: 5;
   display: flex;
-  margin-bottom: 6rem;
+  width: 100%;
+  justify-content: right;
 }
 .btn-info {
   font-family: fira-sans, sans-serif;
   font-size: 1.3rem;
   color: white;
   background-color: var(--background-lightblue-color);
-
-  align-self: center;
+  margin: 3rem;
   width: 6.8rem;
   height: 6.8rem;
   border-style: none;
   border-radius: 50%;
   position: fixed;
-
+  right: 0;
+  bottom: 0;
   z-index: 2;
+}
+
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 13rem;
+  }
+  .grid-item2 p {
+    margin-top: 3rem;
+  }
+  .grid-item2 p,
+  .grid-item3 p {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
 }
