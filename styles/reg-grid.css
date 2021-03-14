@@ -113,12 +113,6 @@ textarea {
   border: none;
   border-radius: 2rem;
 }
-.reg-grid-item5 {
-  grid-column: 1/3;
-  grid-row: 5;
-  background-color: whitesmoke;
-  height: 5rem;
-}
 
 @media screen and (min-width: 600px) {
   .reg-grid-item3 {
@@ -145,13 +139,21 @@ textarea {
     width: 35rem;
     margin: 3rem 1rem 1rem 1rem;
   }
+
+  .register-grid-container {
+    background-image: url(/assets/varnern-delad.svg);
+    background-repeat: no-repeat;
+    background-size: 60%;
+
+    background-blend-mode: soft-light;
+  }
 }
 
 @media screen and (min-width: 700px) {
   .reg-grid-item1 {
     grid-column: 1;
     grid-row: 3;
-    margin-top: 0rem;
+    margin-top: 5rem;
   }
   .reg-grid-item3 {
     grid-row: 3;
@@ -160,9 +162,18 @@ textarea {
     justify-content: center;
     align-self: center;
   }
-  .reg-grid-item3 p,
-  .reg-grid-item3 ul {
+  .reg-grid-item3 p {
     align-self: center;
+  }
+  .reg-grid-item3 ul {
+    align-self: flex-end;
+  }
+  .reg-grid-item3 p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+  .reg-grid-item3 li {
+    font-size: 1.6rem;
   }
   .reg-grid-item1 h2 {
     font-size: 3.5rem;
@@ -179,10 +190,17 @@ textarea {
   .reg-grid-item1 h2 {
     font-size: 6rem;
   }
+  .register-grid-container {
+    background-size: 60%;
+  }
 }
 
 @media screen and (min-width: 1300px) {
   .reg-grid-item1 h2 {
     font-size: 8.5rem;
+  }
+  .register-grid-container {
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }

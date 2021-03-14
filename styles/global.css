@@ -1,18 +1,37 @@
+:root {
+  --background-blue-color: #012c3d;
+  --background-lightblue-color: #78bdc4;
+  --color-font-blue: #012c3d;
+}
+@font-face {
+  src: url(/assets/Fonts/Fira\ Sans\ Medium.woff2);
+  font-family: 'fira-sans';
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  src: url(/assets/Fonts/FiraSans-Regular.woff2);
+  font-family: 'fira-sans-medium';
+  font-style: normal;
+  font-weight: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 10px;
   font-family: fira-sans, sans-serif;
-  --background-blue-color: #012c3d;
-  --background-lightblue-color: #78bdc4;
-  --color-font-blue: #012c3d;
 }
-
+h1,
+h2,
+h3 {
+  font-family: fira-sans-medium;
+}
 body {
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  max-width: 2100px;
+  max-width: 2880px;
   margin: auto;
-  background-color: var(--background-blue-color);
+  background: var(--background-blue-color);
 }
