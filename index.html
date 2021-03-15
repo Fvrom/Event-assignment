@@ -15,11 +15,10 @@
     <link rel="stylesheet" href="/styles/footer.css" />
 
     <!-- Font Fira Sans-->
-    
+
     <title>Vänern Gravel</title>
   </head>
   <body>
-    
     <div class="grid-container">
       <header>
         <div class="grid-logo">
@@ -58,15 +57,39 @@
           <button class="btn-sign-up">Anmäl dig här!</button>
           <div class="arrow" role="scroll down indicator"></div>
         </div>
-      </div>
       </main>
-    
+    </div>
 
-    <button class="btn-info">Snabb-fakta</button>
+    <button data-model-target="#modal" class="btn-info">Snabb-fakta</button>
+
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="info-box-title">
+          <h2>Snabbfakta</h2>
+        </div>
+      </div>
+      <div class="info-text-box">
+        <p>Ett graveläventyr runt Vänern med start och mål i Källby.</p>
+        <p>52 mil, 70% grusväg, 3 etapper.</p>
+
+        <p>
+          2 hotellnätter, 2 trerätters middagar och någon energipåfyllning vid
+          varje etappmål.
+        </p>
+        <p>
+          Tillgång till kvastbil och transport av packning. Rutten på en
+          GPX-fil.
+        </p>
+
+        <p>Pris: 4000kr</p>
+      </div>
+    </div>
+
+    <!-- <div class="active" id="#overlay"> </div> -->
 
     <section class="route-grid-container">
       <div class="empty-grid"></div>
-    
+
       <div class="img-map-icon-grid-item">
         <img
           class="map-icon-img"
@@ -96,7 +119,7 @@
         <img class="map-img" src="/assets/map.svg" alt="Karta över loppet" />
       </div>
     </section>
-    
+
     <section class="accommodations-grid-container">
       <div class="accom-grid-empty-item"></div>
       <div class="accom-grid-item1">
@@ -227,11 +250,10 @@
       <div class="reg-grid-item5"></div>
       <div class="reg-grid-item6"></div>
     </section>
-    <footer> 
-      <div class="footer-item1"> 
+    <footer>
+      <div class="footer-item1">
         <h2>Vår samarbetspartner</h2>
       </div>
-      
     </footer>
     <script src="app.js"></script>
   </body>

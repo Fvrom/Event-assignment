@@ -82,3 +82,91 @@
     display: none;
   }
 }
+
+/*** Info button box ****/
+
+.btn-info {
+  font-family: fira-sans, sans-serif;
+  font-size: 1.3rem;
+  color: white;
+  background-color: var(--background-lightblue-color);
+  margin: 2rem;
+  width: 6.8rem;
+  height: 6.8rem;
+  border-style: none;
+  border-radius: 50%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.modal {
+  transform: scale(0);
+  transition: 300ms ease-in-out;
+  border-radius: 2rem;
+  height: 35rem;
+  width: 30rem;
+  background: whitesmoke;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 4rem;
+  z-index: 2;
+}
+
+.modal.active {
+  transform: scale(1);
+}
+.modal-header .close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.info-box-title {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 2rem 0;
+}
+
+.info-box-title h2 {
+  font-size: 2.4rem;
+}
+
+.info-text-box p {
+  font-size: 1.6rem;
+  margin: 2rem;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+@media screen and (max-width: 320px) {
+  .modal {
+    height: 40rem;
+    width: 25rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .modal {
+    height: 35rem;
+    width: 40rem;
+  }
+}
