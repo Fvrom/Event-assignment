@@ -1,5 +1,5 @@
 .btn-sign-up,
-.bt1 {
+.bt {
   font-family: fira-sans, sans-serif;
   font-weight: 550;
   font-style: italic;
@@ -15,7 +15,7 @@
 }
 
 .btn-sign-up:hover {
-  background: #bb810e;
+  background: #e4a019;
 }
 
 .btn-sign-up::before {
@@ -29,13 +29,12 @@
   transition: 0.8s;
 }
 
-.bt1::before {
-  bottom: 0;
+.bt::before {
   border-radius: 0 0 50% 50%;
 }
 
-.bt1:hover::before {
-  height: 180%;
+.bt:hover::before {
+  height: 1rem;
 }
 
 /* Arrow pointing down */
@@ -100,6 +99,7 @@
   bottom: 0;
   z-index: 3;
   cursor: pointer;
+  outline: none;
 }
 
 .modal {

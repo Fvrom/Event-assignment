@@ -35,3 +35,7 @@ body {
   margin: auto;
   background: var(--background-blue-color);
 }
+
+html {
+  scroll-behavior: smooth;
+}

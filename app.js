@@ -10,16 +10,10 @@ const openModalButton = document.querySelector('.btn-info');
 const closeModalButton = document.querySelector('[data-close-button]');
 const modal = document.querySelector('.modal');
 
-const overlay = document.getElementById('overlay');
-
-/* overlay.addEventListener('click', () => 
-{
-  const modals = document.querySelectiorAll('.modal.active')
-  modals.forEach(modal => {
-    closeModal(modal)
-  })
-})
- */
+const buttonScroll = document.querySelector('.btn-sign-up');
+buttonScroll.addEventListener('click', () => {
+  document.getElementById('down').scrollIntoView();
+});
 
 openModalButton.addEventListener('click', () => {
   if (!modal.classList.contains('active')) {
@@ -33,6 +27,17 @@ openModalButton.addEventListener('click', () => {
   }
 });
 
-/* 
 const urlParams = new URLSearchParams(window.location.search);
-const name = urlParams.get('name');  */
+const name = urlParams.get('name');
+
+const nameSpan = document.querySelector('.name');
+
+function convertFirstCharacterToUpper(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+if (name != null) {
+  nameSpan.textContent = `Välkommen ${convertFirstCharacterToUpper(
+    name
+  )}, till `;
+}

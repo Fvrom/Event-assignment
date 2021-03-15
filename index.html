@@ -27,6 +27,7 @@
       </header>
 
       <main>
+        <div class="grid-item1"><span class="name"></span></div>
         <div class="grid-item1">
           <h1>
             Äventyret <br />
@@ -55,6 +56,7 @@
 
         <div class="grid-item4">
           <button class="btn-sign-up">Anmäl dig här!</button>
+
           <div class="arrow" role="scroll down indicator"></div>
         </div>
       </main>
@@ -205,12 +207,12 @@
         </div>
       </div>
     </section>
-    <section class="register-grid-container">
+    <section class="register-grid-container" id="down">
       <div class="reg-empty-grid"></div>
       <div class="reg-grid-item1">
         <h2 class="acm-title">Anmälningsavgift</h2>
       </div>
-      <div class="reg-grid-item2"><img src="" alt="" /></div>
+
       <div class="reg-grid-item3">
         <p>Priset för detta äventyr är 4000 kr per person.</p>
         <p>I priset ingår följande:</p>
@@ -232,15 +234,30 @@
           <h2>Anmäl dig här</h2>
           <form action="">
             <label for="name">Namn*</label>
-            <input type="text" id="name" required />
+            <input type="text" id="name" placeholder="John Smith" required />
             <label for="address">Adress*</label>
-            <input type="text" id="address" required />
+            <input
+              type="text"
+              id="address"
+              placeholder="Karlagatan 22"
+              required
+            />
             <label for="number">Telefonnummer*</label>
-            <input type="number" id="number" required />
+            <input
+              type="number"
+              id="number"
+              placeholder="nnnnnnnnnn"
+              required
+            />
             <label for="email">Mejladress*</label>
-            <input type="email" id="email" required />
+            <input
+              type="email"
+              id="email"
+              placeholder="example@eaxmple.com"
+              required
+            />
             <label for="allergies">Allergier*</label>
-            <input type="text" id="allergies" required />
+            <input type="text" id="allergies" placeholder="Nötter" required />
             <label for="other">Övrig info</label>
             <textarea type="text" id="other"> </textarea>
             <button type="submit">Registrera</button>
