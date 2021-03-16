@@ -1,9 +1,7 @@
 .equipment-grid-container {
   background-color: whitesmoke;
-
   width: 100%;
   display: grid;
-
   grid-template-rows: repeat(6, auto);
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -25,7 +23,6 @@
   grid-column: 1/3;
   display: flex;
   justify-content: left;
-  /*  margin-left: 3.7rem; */
 }
 .equip-grid-item3 {
   grid-row: 1/4;
@@ -34,8 +31,6 @@
   justify-content: right;
   height: 100%;
   overflow: hidden;
-
-  /*  margin-left: 3.7rem; */
 }
 .equip-grid-item4 {
   grid-row: 3;
@@ -67,7 +62,7 @@
 .equip-grid-item4 p,
 .equip-grid-item5 li {
   color: var(--background-blue-color);
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   max-width: 75ch;
   font-weight: 500;
   line-height: 1.6;

@@ -36,7 +36,5 @@ if (name != null) {
   function convertFirstCharacterToUpper(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
-  nameSpan.textContent = `${convertFirstCharacterToUpper(
-    name
-  )}, du har blivit inbjuden till `;
+  nameSpan.textContent = ` Välkommen,${convertFirstCharacterToUpper(name)}! `;
 }
