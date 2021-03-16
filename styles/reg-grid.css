@@ -124,6 +124,11 @@ textarea {
 .reg-grid-item4 button:hover {
   background: #e4a019;
 }
+.reg-form-wrapper p,
+.reg-form-wrapper a {
+  align-self: center;
+  font-size: 1.7rem;
+}
 
 @media screen and (min-width: 600px) {
   .reg-grid-item3 {

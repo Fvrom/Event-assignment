@@ -51,7 +51,6 @@ main {
   animation: onLoad 1.5s ease-in;
 }
 h1 {
-  font-style: italic;
   font-size: 6rem;
   color: white;
   transition: 1s ease-in;
@@ -155,7 +154,7 @@ h1 {
 
   .grid-item1 span {
     padding-top: 8rem;
-    margin-left: 22rem;
+    margin-left: 42rem;
   }
 }
 
