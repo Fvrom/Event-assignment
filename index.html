@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="preload" as="style" href="/styles/global.css" />
     <link rel="stylesheet" href="/styles/logotype.css" />
     <link rel="stylesheet" href="/styles/main.css" />
     <link rel="stylesheet" href="/styles/route-grid.css" />
@@ -57,7 +58,7 @@
         <div class="grid-item4">
           <button class="btn-sign-up">Anmäl dig här!</button>
 
-          <div class="arrow" role="scroll down indicator"></div>
+          <div class="arrow"></div>
         </div>
       </main>
     </div>
@@ -139,7 +140,11 @@
           äter vår första middag.
         </p>
         <p>Mer information om hotellet och restaurangen hittar du</p>
-        <a href="https://www.amalsstadshotell.se">här</a>
+        <a
+          href="https://www.amalsstadshotell.se"
+          aria-label="link to åmåls stadshotell"
+          >här</a
+        >
 
         <div class="placemarker-container">
           <img src="/assets/Icon-material-place.svg" alt="kartnål" />
@@ -156,7 +161,11 @@
           middag.
         </p>
         <p>Mer information om hotellet och restaurangen hittar du</p>
-        <a href="https://stattkristinehamn.se/">här</a>
+        <a
+          href="https://stattkristinehamn.se/"
+          aria-label="Link to Stadshotellet i Kristinehamn"
+          >här</a
+        >
         <div class="placemarker-container">
           <img src="/assets/Icon-material-place.svg" alt="kartnål" />
           <p class="accom-city">Kristinehamn</p>
@@ -253,7 +262,7 @@
             <input
               type="email"
               id="email"
-              placeholder="example@eaxmple.com"
+              placeholder="example@example.com"
               required
             />
             <label for="allergies">Allergier*</label>
@@ -268,8 +277,23 @@
       <div class="reg-grid-item6"></div>
     </section>
     <footer>
-      <div class="footer-item1">
+      <div class="footer-section">
         <h2>Vår samarbetspartner</h2>
+        <picture>
+          <source
+            srcset="/assets/Bianchi_Product_1_2x.webp"
+            media="(min-width: 800px)"
+          />
+          <source
+            srcset="/assets/Bianchi_Product_1_1x.webp"
+            media="(min-width: 300px)"
+          />
+
+          <img
+            src="/assets/Bianchi_Product_1_1x.webp"
+            alt="Company logo for Bianchi"
+          />
+        </picture>
       </div>
     </footer>
     <script src="app.js"></script>

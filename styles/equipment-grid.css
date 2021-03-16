@@ -47,6 +47,7 @@
   flex-direction: column;
   justify-content: center;
   width: 100%;
+  margin-bottom: 2rem;
 }
 
 .equip-grid-item5 ul {
@@ -78,7 +79,7 @@
   color: var(--color-font-blue);
   font-size: 4.5rem;
   font-style: italic;
-  font-weight: 550;
+  font-weight: 600;
   text-align: left;
   align-self: start;
 

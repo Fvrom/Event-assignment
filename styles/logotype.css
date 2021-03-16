@@ -5,6 +5,8 @@ header {
 header img {
   opacity: 1;
   margin-top: 2;
+  height: 4rem;
+  width: 22.1rem;
 }
 
 .grid-logo {

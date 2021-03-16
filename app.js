@@ -30,14 +30,13 @@ openModalButton.addEventListener('click', () => {
 const urlParams = new URLSearchParams(window.location.search);
 const name = urlParams.get('name');
 
-const nameSpan = document.querySelector('.name');
-
-function convertFirstCharacterToUpper(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
 if (name != null) {
-  nameSpan.textContent = `Välkommen ${convertFirstCharacterToUpper(
+  const nameSpan = document.querySelector('.name');
+
+  function convertFirstCharacterToUpper(string) {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  }
+  nameSpan.textContent = `${convertFirstCharacterToUpper(
     name
-  )}, till `;
+  )}, du har blivit inbjuden till `;
 }

@@ -36,6 +36,15 @@
 .bt:hover::before {
   height: 1rem;
 }
+/** on load **/
+@keyframes onLoad {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 /* Arrow pointing down */
 @keyframes arrow {
@@ -49,6 +58,7 @@
 
 .arrow.reveal {
   opacity: 0;
+
   height: 2rem;
   width: 6rem;
   margin-top: 5rem;

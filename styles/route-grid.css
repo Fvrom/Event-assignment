@@ -71,13 +71,13 @@
 
 .etapp-info {
   color: var(--color-font-blue);
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   line-height: 1.6;
 }
 
 .map-img {
-  /* width: 34rem;
-  height: 34rem; */
+  width: 34rem;
+  height: 34rem;
   margin-top: 3rem;
   overflow: hidden;
 }
@@ -89,6 +89,7 @@
 
   .map-img {
     width: 55rem;
+    height: 55rem;
   }
 
   .img-map-icon-grid-item {
@@ -112,6 +113,9 @@
   .empty-grid {
     height: 10rem;
   }
+  .route-title {
+    font-size: 8.5rem;
+  }
   .route-grid-item2 {
     grid-column: 2;
     grid-row-start: 2;
@@ -125,6 +129,7 @@
   .map-img {
     margin: 0;
     width: 45rem;
+    height: 45rem;
   }
 
   .img-map-icon-grid-item {
@@ -138,6 +143,15 @@
 
     top: 3rem;
     transform: translateX(-12%);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .etapp {
+    margin-top: 4rem;
+  }
+  .etapp-info {
+    margin-top: 0.5rem;
   }
 }
 
