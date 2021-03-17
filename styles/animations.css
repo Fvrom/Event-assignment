@@ -179,4 +179,9 @@
     height: 35rem;
     width: 40rem;
   }
+
+  .btn-info {
+    width: 8rem;
+    height: 8rem;
+  }
 }

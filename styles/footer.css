@@ -2,11 +2,10 @@ footer {
   height: 30rem;
   background: whitesmoke;
   width: 100%;
-  display: grid;
-  grid-template-rows: repeat(1, 1fr);
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  
   align-items: center;
-  flex-wrap: nowrap;
+
   justify-content: center;
   overflow: hidden;
 }
@@ -19,7 +18,7 @@ footer {
 }
 
 .footer-section {
-  grid-column: 1/3;
+  
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -45,9 +44,10 @@ footer {
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .footer-section {
-    grid-column: 1;
+    flex-direction: row;
+    justify-content: space-around;
   }
   .footer-section img {
     width: 67rem;
@@ -55,6 +55,11 @@ footer {
   }
   .footer-section h2 {
     font-size: 3rem;
-    margin-top: 4rem;
+    align-self: center;
+
+    
+  }
+  .footer-section picture {
+    justify-content: space-around;
   }
 }

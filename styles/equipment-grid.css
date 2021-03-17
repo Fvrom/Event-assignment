@@ -74,7 +74,6 @@
 .equip-title {
   color: var(--color-font-blue);
   font-size: 4.5rem;
-  font-style: italic;
   font-weight: 600;
   text-align: left;
   align-self: start;
@@ -144,9 +143,11 @@
   }
   .equip-grid-item2 {
     justify-content: left;
+    
   }
-  .equip-grid-item2 .equip-title {
+  .equip-grid-item2 h2 {
     text-align: left;
+    
   }
   .equip-title {
     font-size: 8rem;

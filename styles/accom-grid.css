@@ -67,10 +67,8 @@
 .accom-grid-item3 h3 {
   color: white;
   font-size: 2.6rem;
-  font-style: italic;
-  align-self: start;
   font-weight: 500;
-
+  align-self: start;
   margin-top: 1rem;
 }
 .accom-grid-item2 p,
@@ -87,7 +85,6 @@
 .acm-title {
   color: white;
   font-size: 4.5rem;
-  font-style: italic;
   font-weight: 500;
   margin-top: 2rem;
 }

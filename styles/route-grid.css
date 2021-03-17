@@ -47,10 +47,8 @@
 .route-title {
   color: var(--color-font-blue);
   font-size: 4.5rem;
-  font-style: italic;
   flex-direction: column;
   justify-content: center;
-
   margin-top: 3rem;
 }
 
