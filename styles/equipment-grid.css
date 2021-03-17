@@ -61,6 +61,7 @@
 }
 .equip-grid-item4 p,
 .equip-grid-item5 li {
+  font-family: 'fira-sans-medium';
   color: var(--background-blue-color);
   font-size: 1.6rem;
   max-width: 75ch;
@@ -140,6 +141,12 @@
     grid-column: 1;
 
     margin-right: 0;
+  }
+  .equip-grid-item2 {
+    justify-content: left;
+  }
+  .equip-grid-item2 .equip-title {
+    text-align: left;
   }
   .equip-title {
     font-size: 8rem;

@@ -37,9 +37,11 @@
   flex-direction: column;
   z-index: 1;
   margin-left: 3.7rem;
+  margin-right: 1rem;
 }
 .reg-grid-item3 p {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  font-family: 'fira-sans-medium';
 }
 
 .reg-grid-item3,
@@ -50,6 +52,7 @@
   line-height: 1.6;
   margin-top: 2rem;
   z-index: 1;
+  font-family: 'fira-sans-medium';
 }
 
 .reg-grid-item4 {
@@ -73,6 +76,8 @@
 .reg-grid-item4 h2 {
   display: flex;
   justify-content: center;
+  font-family: 'fira-sans-medium-italic';
+  font-weight: 550;
   font-size: 2.6rem;
   margin-top: 2rem;
 }
@@ -85,6 +90,7 @@
 }
 
 .reg-grid-item4 label {
+  font-family: 'fira-sans-medium';
   font-size: 1.6rem;
   color: var(--background-blue-color);
   margin-left: 1rem;

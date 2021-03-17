@@ -51,6 +51,7 @@ main {
   animation: onLoad 1.5s ease-in;
 }
 h1 {
+  font-family: 'fira-sans-semi-bold-italic';
   font-size: 6rem;
   color: white;
   transition: 1s ease-in;
@@ -68,6 +69,7 @@ h1 {
 }
 .grid-item2 p,
 .grid-item3 p {
+  font-family: fira-sans-medium;
   color: white;
   font-size: 1.4rem;
   max-width: 75ch;
