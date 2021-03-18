@@ -43,7 +43,7 @@
   z-index: 1;
 }
 .route-grid-item1.animate {
-  animation: slideInLeft 0.8s ease-in;
+  animation: slideInLeft 1.5s ease-in-out;
 }
 
 .route-title {

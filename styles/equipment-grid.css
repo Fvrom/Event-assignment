@@ -8,6 +8,7 @@
   flex-wrap: nowrap;
   justify-content: center;
 }
+
 .equip-empty-grid {
   background-color: var(--background-blue-color);
   grid-row: 1;
@@ -26,6 +27,13 @@
   justify-content: center;
   color: var(--background-blue-color);
 }
+.equip-grid-item2.animate {
+  animation: onLoad 1.5s ease-in;
+}
+.equip-grid-item5.animate {
+  animation: onLoad 1.5s ease-in;
+}
+
 .equip-grid-item3 {
   grid-row: 1/4;
   grid-column: 1/3;

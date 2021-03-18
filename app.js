@@ -31,26 +31,28 @@ openModalButton.addEventListener('click', () => {
 
 /** fade in animation to be activated **/
 
-const routeElement = document.querySelector('#grid-animation');
+const scrollElements = document.querySelectorAll('.scroll-animation');
 const scrollOffset = 100;
 
+const handleScrollanimation = () => {
+  scrollElements.forEach((el) => {
+    if (elementInView(el, scrollOffset)) {
+      displayElement(el);
+    }
+  });
+};
+
 const elementInView = (el, offset = 0) => {
-  const routeElementTop = el.getBoundingClientRect().top;
+  const ElementTop = el.getBoundingClientRect().top;
 
   return (
-    routeElementTop <=
+    ElementTop <=
     (window.innerHeight || document.documentElement.clientHeight) - offset
   );
 };
 
-const displayElement = () => {
-  routeElement.classList.add('animate');
-};
-
-const handleScrollanimation = () => {
-  if (elementInView(routeElement, scrollOffset)) {
-    displayElement();
-  }
+const displayElement = (element) => {
+  element.classList.add('animate');
 };
 
 document.addEventListener('scroll', function () {
