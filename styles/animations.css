@@ -1,5 +1,4 @@
-.btn-sign-up,
-.bt {
+.btn-sign-up {
   font-family: fira-sans, sans-serif;
   font-weight: 550;
   font-style: italic;
@@ -18,24 +17,6 @@
   background: #e4a019;
 }
 
-.btn-sign-up::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 0%;
-  background: #636261;
-  z-index: -1;
-  transition: 0.8s;
-}
-
-.bt::before {
-  border-radius: 0 0 50% 50%;
-}
-
-.bt:hover::before {
-  height: 1rem;
-}
 /** on load **/
 @keyframes onLoad {
   0% {
@@ -67,7 +48,6 @@
 
 .arrow.reveal {
   opacity: 0;
-
   height: 2rem;
   width: 6rem;
   align-self: center;
@@ -88,6 +68,17 @@
   transform: rotate(0.63turn);
 
   animation: 4s ease-in;
+}
+
+/* fade in animations */
+.accom-grid-item1.animate,
+.accom-grid-item2.animate,
+.route-grid-item1.animate,
+.reg-grid-item1.animate,
+.reg-grid-item3.animate,
+.accom-grid-item3.animate {
+  animation: slideInLeft 1s ease-in;
+  opacity: 1;
 }
 
 @media screen and (max-width: 319px) {
@@ -167,8 +158,16 @@
 
 @media screen and (min-width: 700px) {
   .modal {
-    height: 35rem;
+    height: 45rem;
     width: 40rem;
+  }
+  .info-box-title {
+    margin-top: 2rem;
+  }
+
+  .info-text-box p {
+    margin-bottom: 4rem;
+    font-size: 1.8rem;
   }
 
   .btn-info {

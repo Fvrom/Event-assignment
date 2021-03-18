@@ -41,9 +41,7 @@
   margin: 2rem 2rem 0rem 2rem;
   margin-left: 3.7rem;
   z-index: 1;
-}
-.route-grid-item1.animate {
-  animation: slideInLeft 1.5s ease-in-out;
+  opacity: 0;
 }
 
 .route-title {

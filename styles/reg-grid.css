@@ -20,12 +20,7 @@
   display: flex;
   justify-content: center;
   z-index: 1;
-}
-.reg-grid-item1.animate {
-  animation: slideInLeft 1.5s ease-in-out;
-}
-.reg-grid-item3.animate {
-  animation: slideInLeft 1.5s ease-in-out;
+  opacity: 0;
 }
 
 .reg-empty-grid {
@@ -44,6 +39,7 @@
   z-index: 1;
   margin-left: 3.7rem;
   margin-right: 1rem;
+  opacity: 0;
 }
 .reg-grid-item3 p {
   font-size: 1.8rem;
