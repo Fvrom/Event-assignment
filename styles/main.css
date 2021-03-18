@@ -5,7 +5,7 @@ main {
 .grid-item1 span {
   padding-top: 7rem;
   margin-bottom: 0;
-  color: #efc570;
+  color: white;
 }
 .name {
   font-size: 1.6rem;
@@ -18,36 +18,20 @@ main {
   flex-direction: column;
   justify-content: center;
   flex-wrap: nowrap;
-
   background-image: url(/assets/Vanern.svg);
   background-repeat: no-repeat;
   background-size: 150%;
   background-position-y: 10%;
   background-blend-mode: soft-light;
-
   z-index: 1;
 }
-/* 
-.grid-container:before {
-  content: '';
-  background-image: linear-gradient(#012c3d, #78bdc4);
-  background-size: 150%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  opacity: 0.5;
-} */
 
 .grid-item1 {
   display: flex;
   justify-content: center;
   z-index: 1;
   width: 100%;
-
   margin: 1rem 2rem 1rem 0rem;
-
   animation: onLoad 1.5s ease-in;
 }
 h1 {
@@ -63,7 +47,7 @@ h1 {
   justify-content: center;
 
   flex-direction: column;
-  margin: 0rem 2rem 1rem 2rem;
+  margin: 0rem 2rem 1rem 3rem;
   z-index: 1;
   animation: onLoad 1.5s ease-in;
 }
@@ -83,7 +67,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 2rem 2rem 1rem 2rem;
+  margin: 2rem 2rem 1rem 3rem;
   z-index: 1;
   animation: onLoad 1.5s ease-in;
 }
@@ -110,6 +94,7 @@ h1 {
 .btn-sign-up-container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   margin-bottom: 6rem;
   margin-top: 2rem;
   z-index: 1;
@@ -132,7 +117,6 @@ h1 {
     background-position-y: 100%;
     background-position-x: 20em;
   }
-  
 }
 
 @media screen and (min-width: 1200px) {
@@ -175,7 +159,6 @@ h1 {
     margin-bottom: 1rem;
   }
 }
-
 
 @media screen and (min-width: 1500px) {
   .grid-container {

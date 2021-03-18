@@ -8,7 +8,7 @@
   flex-wrap: nowrap;
   justify-content: center;
 }
-.equip-grid-item1 {
+.equip-empty-grid {
   background-color: var(--background-blue-color);
   grid-row: 1;
   grid-column: 1/3;
@@ -22,7 +22,9 @@
   grid-row: 2;
   grid-column: 1/3;
   display: flex;
-  justify-content: left;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--background-blue-color);
 }
 .equip-grid-item3 {
   grid-row: 1/4;
@@ -32,9 +34,7 @@
   height: 100%;
   overflow: hidden;
 }
-.equip-grid-item4 {
-  grid-row: 3;
-}
+
 .equip-grid-item5 {
   grid-row: 4/6;
   grid-column: 1/3;
@@ -43,6 +43,11 @@
   justify-content: center;
   width: 100%;
   margin-bottom: 2rem;
+}
+.equip-grid-item2 p {
+  align-self: center;
+  margin-left: 3.7rem;
+  margin-right: 2rem;
 }
 
 .equip-grid-item5 ul {
@@ -59,14 +64,14 @@
   z-index: 1;
   color: var(--background-blue-color);
 }
-.equip-grid-item4 p,
+.equip-grid-item2 p,
 .equip-grid-item5 li {
   font-family: 'fira-sans-medium';
   color: var(--background-blue-color);
   font-size: 1.6rem;
   max-width: 75ch;
   font-weight: 500;
-  line-height: 1.6;
+  line-height: 1.8;
   margin-top: 1rem;
   z-index: 1;
 }
@@ -77,7 +82,6 @@
   font-weight: 600;
   text-align: left;
   align-self: start;
-
   margin-left: 3.7rem;
   margin-top: 2rem;
   position: relative;
@@ -98,6 +102,7 @@
     display: flex;
     justify-content: center;
   }
+
   .equip-grid-item5 {
     grid-row: 4;
   }
@@ -128,7 +133,7 @@
     transform: translateX(15%);
   }
 
-  .equip-grid-item1 {
+  .equip-empty-grid {
     height: 4rem;
     overflow: hidden;
   }
@@ -138,20 +143,16 @@
   .equip-grid-item2,
   .equip-grid-item4 {
     grid-column: 1;
-
     margin-right: 0;
   }
   .equip-grid-item2 {
-    justify-content: left;
-    
+    justify-content: center;
   }
-  .equip-grid-item2 h2 {
-    text-align: left;
-    
-  }
+
   .equip-title {
     font-size: 8rem;
     margin-top: 4rem;
+    align-self: flex-start;
   }
 
   .equip-grid-item5 {
@@ -161,7 +162,7 @@
     margin-bottom: 3rem;
   }
 
-  .equip-grid-item4 p,
+  .equip-grid-item2 p,
   .equip-grid-item5 li {
     font-size: 1.8rem;
     line-height: 1.7;
@@ -177,6 +178,14 @@
     height: 58.7rem;
 
     transform: translateX(13%);
+  }
+}
+@media screen and (min-width: 1300px) {
+  .equip-title,
+  .equip-grid-item2 p,
+  .equip-list-wrapper ul {
+    margin-left: 20rem;
+    align-self: flex-start;
   }
 }
 

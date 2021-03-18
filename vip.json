@@ -1,0 +1,27 @@
+{
+  "names": [
+    { "name": "Linn", "VIP": true },
+    { "name": "Ellen", "VIP": true },
+    { "name": "Fanny", "VIP": true },
+    { "name": "Sarah", "VIP": true },
+    { "name": "Evelina", "VIP": true },
+    { "name": "Josefin", "VIP": true },
+    { "name": "Frida", "VIP": false },
+    { "name": "Lisa", "VIP": true },
+    { "name": "Matilda", "VIP": true },
+    { "name": "Teresa", "VIP": false },
+    { "name": "Adam", "VIP": true },
+    { "name": "Philip", "VIP": true },
+    { "name": "Lisa", "VIP": true },
+    { "name": "Cornelia", "VIP": false },
+    { "name": "Edvin", "VIP": true },
+    { "name": "Lisa", "VIP": true },
+    { "name": "Hanna", "VIP": true },
+    { "name": "Tova", "VIP": true },
+    { "name": "Anton", "VIP": false },
+    { "name": "Julia", "VIP": true },
+    { "name": "Annie", "VIP": true },
+    { "name": "Rebecca", "VIP": false },
+    { "name": "Ida", "VIP": true }
+  ]
+}

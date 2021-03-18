@@ -12,6 +12,37 @@
       content="Cykel, Gravel, Gravelcykel, Vänern, Vänern Gravel Adventure"
     />
 
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="assets/favicon/favicon-16x16.png"
+      ;
+      sizes="16x16"
+    />
+
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="assets/favicon/favicon-32x32.png"
+      ;
+      sizes="32x32"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="assets/favicon/android-chrome-192x192.png"
+    />
+    <!-- 
+    <meta property=\"og:site_name\" content=\"$1\">\n<meta property=\"og:title\" content=\"$2\" />\n<meta property=\"og:description\" content=\"$3\" />\n<meta property=\"og:image\" content=\"$4\" />\n<meta name=\"twitter:image\" content=\"$5\" />\n<meta name=\"twitter:card\" content=\"$6\" />\n<meta name=\"twitter:image:alt\" content=\"$7\">\n<meta propety=\"og:url\" content=\"$8\" />
+     
+-->
     <link rel="stylesheet" href="/styles/global.css" />
     <link rel="preload" as="style" href="/styles/global.css" />
     <link rel="stylesheet" href="/styles/logotype.css" />
@@ -93,8 +124,6 @@
       </div>
     </div>
 
-    <!-- <div class="active" id="#overlay"> </div> -->
-
     <section class="route-grid-container">
       <div class="empty-grid"></div>
 
@@ -102,10 +131,10 @@
         <img
           class="map-icon-img"
           src="/assets/Icon-awesome-map-marked-alt.svg"
-          alt=""
+          alt="Bakgrundsbild som visar en illustration på en pinnål över en karta"
         />
       </div>
-      <div class="route-grid-item1">
+      <div class="route-grid-item1" id="grid-animation">
         <h2 class="route-title">Rutten</h2>
 
         <h3 class="etapp">Etapp 1: Källby - Åmål</h3>
@@ -127,7 +156,7 @@
         <img
           class="map-img"
           src="/assets/map.svg"
-          alt="Karta över loppet med tre pinnålar som visar etapperna"
+          alt="Karta över loppet med tre pinnålar som visar ettaperna"
         />
       </div>
     </section>
@@ -138,7 +167,11 @@
         <h2 class="acm-title">Boende & mat</h2>
       </div>
       <div class="img-town-grid-item">
-        <img class="town-img" src="/assets/town.svg" alt="" />
+        <img
+          class="town-img"
+          src="/assets/town.svg"
+          alt="Illustration på en stad"
+        />
       </div>
       <div class="accom-grid-item2">
         <h3>Natt 1 - Åmåls Stadshotell</h3>
@@ -182,19 +215,9 @@
       </div>
     </section>
     <section class="equipment-grid-container">
-      <div class="equip-grid-item1"></div>
+      <div class="equip-empty-grid"></div>
       <div class="equip-grid-item2">
         <h2 class="equip-title">Utrustning</h2>
-      </div>
-
-      <div class="equip-grid-item3">
-        <img
-          class="bike-img"
-          src="/assets/bike.svg"
-          alt="illustration på en cykel"
-        />
-      </div>
-      <div class="equip-grid-item4">
         <p>
           Du väljer själv vilken typ av cykel du vill ha men vi rekommenderar
           gravel/cykelcross. Det fungerar givetvis också med en mountainbike.
@@ -206,6 +229,15 @@
           bil till etappmålet.
         </p>
       </div>
+
+      <div class="equip-grid-item3">
+        <img
+          class="bike-img"
+          src="/assets/bike.svg"
+          alt="illustration på en cykel"
+        />
+      </div>
+      <div class="equip-grid-item4"></div>
 
       <div class="equip-grid-item5">
         <div class="equip-list-wrapper">

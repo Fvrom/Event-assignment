@@ -3,7 +3,7 @@ footer {
   background: whitesmoke;
   width: 100%;
   display: flex;
-  
+
   align-items: center;
 
   justify-content: center;
@@ -18,7 +18,6 @@ footer {
 }
 
 .footer-section {
-  
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -56,8 +55,8 @@ footer {
   .footer-section h2 {
     font-size: 3rem;
     align-self: center;
-
-    
+    margin-right: 5rem;
+    margin-left: 3rem;
   }
   .footer-section picture {
     justify-content: space-around;

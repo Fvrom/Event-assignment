@@ -56,12 +56,20 @@
   }
 }
 
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
 .arrow.reveal {
   opacity: 0;
 
   height: 2rem;
   width: 6rem;
-  margin-top: 5rem;
   align-self: center;
   bottom: 0;
   animation: arrow 4s ease-in 2s forwards;
@@ -71,7 +79,6 @@
   content: '';
   height: 2rem;
   width: 2rem;
-  margin: 1rem;
   margin-bottom: 2rem;
   position: absolute;
   bottom: 0;
@@ -149,22 +156,6 @@
 .info-text-box p {
   font-size: 1.6rem;
   margin: 2rem;
-}
-
-#overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  pointer-events: none;
-}
-
-#overlay.active {
-  opacity: 1;
-  pointer-events: all;
 }
 
 @media screen and (max-width: 320px) {

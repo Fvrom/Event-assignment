@@ -1,3 +1,4 @@
+/** arrow to indicate scroll down */
 const arrow = document.querySelector('.arrow');
 arrow.classList.add('reveal');
 
@@ -6,6 +7,7 @@ window.addEventListener('scroll', function (e) {
   arrow.classList.remove('reveal');
 });
 
+/** info box **/
 const openModalButton = document.querySelector('.btn-info');
 const closeModalButton = document.querySelector('[data-close-button]');
 const modal = document.querySelector('.modal');
@@ -27,14 +29,63 @@ openModalButton.addEventListener('click', () => {
   }
 });
 
-const urlParams = new URLSearchParams(window.location.search);
-const name = urlParams.get('name');
+/** fade in animation to be activated **/
 
-if (name != null) {
+const routeElement = document.querySelector('#grid-animation');
+const scrollOffset = 100;
+
+const elementInView = (el, offset = 0) => {
+  const routeElementTop = el.getBoundingClientRect().top;
+
+  return (
+    routeElementTop <=
+    (window.innerHeight || document.documentElement.clientHeight) - offset
+  );
+};
+
+const displayElement = () => {
+  routeElement.classList.add('animate');
+};
+
+const handleScrollanimation = () => {
+  if (elementInView(routeElement, scrollOffset)) {
+    displayElement();
+  }
+};
+
+document.addEventListener('scroll', function () {
+  handleScrollanimation();
+});
+
+/** Get name from url **/
+const urlParams = new URLSearchParams(window.location.search);
+const urlname = urlParams.get('name');
+
+if (urlname != null) {
   const nameSpan = document.querySelector('.name');
 
   function convertFirstCharacterToUpper(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
-  nameSpan.textContent = ` Välkommen ${convertFirstCharacterToUpper(name)}! `;
+
+  nameSpan.textContent = ` Välkommen ${convertFirstCharacterToUpper(
+    urlname
+  )}! `;
+
+  fetch('./vip.json')
+    .then(function (response) {
+      return response.json();
+    })
+    .then((vip) => {
+      vip.names.forEach((checkname) => {
+        if (checkname.name === convertFirstCharacterToUpper(urlname)) {
+          if (checkname.VIP === true) {
+            console.log(checkname.VIP);
+            const inputField = document.querySelector('textarea');
+
+            inputField.textContent = `Rabattkod: VANERN2021 `;
+          }
+        }
+      });
+    });
 }
