@@ -39,6 +39,7 @@
 }
 .town-img {
   width: 35rem;
+  height: 26.9rem;
   position: relative;
 
   transform: translateX(55%);
@@ -84,7 +85,7 @@
   max-width: 75ch;
   font-weight: 400;
   line-height: 1.7;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 
 .acm-title {
@@ -105,6 +106,11 @@
 .placemarker-container {
   display: flex;
   margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+.placemarker-container img {
+  width: 1.8rem;
+  height: 4rem;
 }
 
 @media screen and (min-width: 600px) {
@@ -118,6 +124,7 @@
   }
   .town-img {
     width: 50rem;
+    height: 41.9rem;
     position: relative;
     margin: 0rem;
     transform: translateX(10%);

@@ -4,32 +4,6 @@
   --color-font-blue: #012c3d;
 }
 
-@font-face {
-  src: url(/assets/Fonts/FiraSans-SemiBoldItalic.woff2);
-  font-family: 'fira-sans-semi-bold-italic';
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  src: url(/assets/Fonts/FiraSans-Medium.woff2);
-  font-family: 'fira-sans-medium';
-  font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  src: url(/assets/Fonts/FiraSans-MediumItalic.woff2);
-  font-family: 'fira-sans-medium-italic';
-  font-style: normal;
-  font-weight: normal;
-}
-@font-face {
-  src: url(/assets/Fonts/FiraSans-Regular.woff2);
-  font-family: 'fira-sans-regular';
-  font-style: normal;
-  font-weight: normal;
-}
-
 * {
   margin: 0;
   padding: 0;
